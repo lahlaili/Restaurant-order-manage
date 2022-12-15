@@ -5,16 +5,22 @@
 </head>
 <body>
 	<center>
-		<h1>login</h1>
+		<div class="log">
+			<h1>login</h1>
+			<form class="" action="index.php" method="POST">
+				<input type="text" name="gmail" placeholder="gmail :"><br>
+				<input type="text" name="pass" placeholder="password :"><br>
+				<input type="submit" name="btn" >
+			</form>
+		</div>
 	</center>
-	<?php 
-	$x=14;
-		echo "hello";
-		if ($x==1) {
-			echo "helooooo";
-		}else{
-			echo "not";
+	<?php
+		if(isset($_POST["btn"])){
+			$gmail = $_POST["gmail"];
+			$pass = $_POST["pass"];
+			
 		}
-	?>
+	 ?>
+
 </body>
 </html>
